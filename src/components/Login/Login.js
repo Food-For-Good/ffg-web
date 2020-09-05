@@ -18,7 +18,7 @@ const login = () =>{
 
 
     <div className={classes.formFooter}>
-      <p style={{display:'inline-block', margin:'auto'}}>New member? &nbsp;</p>
+      <p style={{display:'inline-block', margin:'auto'}}>Nee &nbsp;</p>
       <a className={classes.underlineHover} href="/">Sign In</a>
     </div>
   </div>
