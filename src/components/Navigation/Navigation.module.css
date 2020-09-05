@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Forum&display=swap");
+
+.background {
+  background-color: #faf8f1;
+}
+.margin_set {
+  padding: 0;
+}
+.signUp {
+  font-size: 1rem;
+  padding: 10px 30px;
+  font-weight: bold;
+  border: solid rgba(98, 97, 94, 1) 1px;
+  border-radius: 0;
+  margin: 5px 10px;
+  background-color: #faf8f1;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav_link {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1.05rem;
+  margin: 5px 15px;
+}

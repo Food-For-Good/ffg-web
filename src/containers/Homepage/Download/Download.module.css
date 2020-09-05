@@ -1,0 +1,23 @@
+.title {
+  background-color: #faf8f1;
+  color: black;
+  text-align: left;
+}
+
+.container_fluid {
+  padding: 10% 20% 10%;
+}
+
+.title_image {
+  width: 50%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+  z-index: 0;
+  left: 135.838px;
+  top: -92.8517px;
+}
+
+.download_button {
+  margin: 10px;
+}

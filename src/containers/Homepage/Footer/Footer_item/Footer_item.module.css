@@ -1,0 +1,9 @@
+.social_icon {
+  color: white;
+  margin: 15px 10px;
+}
+
+.footer_list_item {
+  list-style-type: none;
+  display: inline-block;
+}

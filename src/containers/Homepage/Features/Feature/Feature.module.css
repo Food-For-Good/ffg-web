@@ -1,0 +1,24 @@
+.featureTitle {
+  font-size: 1.35rem;
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: "Forum", cursive;
+  font-size: 1.15rem;
+}
+
+.featureBox {
+  text-align: center;
+  padding: 3% 5%;
+}
+
+.icon {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.icon:hover {
+  color: #9b7c4e;
+}

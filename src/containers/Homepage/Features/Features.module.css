@@ -1,0 +1,13 @@
+.brown_section {
+  display: block;
+  background-color: #2b1e16;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 5px 0;
+}
+.container_fluid {
+  padding: 7% 15%;
+}
+
+.features {
+  position: relative;
+}
