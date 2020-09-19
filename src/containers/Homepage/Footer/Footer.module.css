@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Forum&display=swap");
 .footer_list {
   padding: 30px 0;
-  background: #2b1e16;
+  background: #353535;
   text-align: center;
   margin: 0;
   position: relative;
   z-index: 10;
 }
 .p {
-  color: white;
-  font-family: "Forum", cursive;
+  color: #FEA848;
+  font-family: 'Proxima Nova';
   font-size: 1.15rem;
 }

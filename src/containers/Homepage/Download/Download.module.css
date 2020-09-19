@@ -1,5 +1,5 @@
 .title {
-  background-color: #faf8f1;
+  background-color:#FFF7F1;
   color: black;
   text-align: left;
 }
@@ -9,13 +9,21 @@
 }
 
 .title_image {
-  width: 50%;
+  width: 55%;
   transform: rotate(25deg);
   position: absolute;
   right: 20%;
   z-index: 0;
   left: 135.838px;
-  top: -92.8517px;
+  top: -99.8517px;
+}
+.download_title{
+  font-family: "Proxima Nova";
+}
+.p{
+  display: inline;
+  font-family: 'Proxima Nova Bold';
+  color:white
 }
 
 .download_button {

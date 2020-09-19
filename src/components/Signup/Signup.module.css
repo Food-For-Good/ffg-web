@@ -10,6 +10,7 @@ a {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+    font-family: "Proxima Nova";
     text-transform: uppercase;
     display:inline-block;
     margin: 40px 8px 10px 8px; 
@@ -38,6 +39,7 @@ a {
     width: 90%;
     max-width: 450px;
     position: relative;
+    font-family: "Proxima Nova";
     padding: 0px;
     text-align: center;
   }
@@ -77,6 +79,7 @@ a {
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
+    font-family: "Proxima Nova";
     font-size: 13px;
     -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
     box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
@@ -108,6 +111,7 @@ a {
     color: #0d0d0d;
     padding: 15px 32px;
     text-align: center;
+    font-family: "Proxima Nova";
     text-decoration: none;
     display: inline-block;
     font-size: 16px;

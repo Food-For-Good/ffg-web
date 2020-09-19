@@ -1,11 +1,13 @@
 .featureTitle {
   font-size: 1.35rem;
-  color: white;
+  color: #FEA848;
 }
 
+.description{
+  color:#FEA848;
+}
 p {
-  color: white;
-  font-family: "Forum", cursive;
+  font-family: "Proxima Nova";
   font-size: 1.15rem;
 }
 
@@ -15,7 +17,7 @@ p {
 }
 
 .icon {
-  color: white;
+  color: #FEA848;
   margin-bottom: 16px;
 }
 
