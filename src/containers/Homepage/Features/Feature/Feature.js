@@ -12,7 +12,7 @@ const feature = (props) => {
       <div className={["col-lg-4", classes.featureBox].join(" ")}>
         <i className={classes_for_icon}></i>
         <h3 className={classes.featureTitle}>{props.title}</h3>
-        <p className={classes.p}>{props.description}</p>
+        <p className={classes.description}>{props.description}</p>
       </div>
     </Aux>
   );

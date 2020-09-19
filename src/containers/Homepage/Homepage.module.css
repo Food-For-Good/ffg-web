@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Forum&display=swap");
 
 .body {
-  background-color: #faf8f1;
+  background-color:#FFF7F1;
 }
 .brand {
   margin: 0 0 5px 0;
+  padding-top: 40px;
   text-align: center;
   color: black;
-  font-family: "Forum", cursive;
+  font-family: "Proxima Nova";
   font-weight: 1;
   font-size: 5rem;
-  letter-spacing: 10px;
+  /* letter-spacing: px; */
   display: block;
 }
+.good_bold{
+  font-family: "Proxima Nova Bold";
+  color: #FEA848
+}
 .caption {
-  font-family: "Balsamiq Sans", cursive;
+  /* font-family: "Balsamiq Sans", cursive; */
+  font-family: "Proxima Nova Thin";
   margin: 0 0 80px 0;
   text-align: center;
   color: #826e50;
   font-size: 1.75rem;
+  display: block;
 }
 
 .parallax {

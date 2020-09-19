@@ -7,14 +7,14 @@ class Download extends Component {
       <div className={classes.title + " " + classes.container_fluid}>
         <div className="row">
           <div className="col-lg-6">
-            <h1 className="big-heading">Checkout out Mobile app.</h1>
+            <h1 className={classes.download_title +" big-heading"}>Checkout out Mobile app</h1>
             <button
               type="button"
               className={
                 "btn btn-dark btn-lg download-button " + classes.download_button
               }
             >
-              <i className="fa fa-apple"></i> Download
+              <i className="fa fa-apple"></i> <p className={classes.p}>Download</p>
             </button>
             <button
               type="button"
@@ -22,7 +22,7 @@ class Download extends Component {
                 "btn btn-dark btn-lg download-button " + classes.download_button
               }
             >
-              <i className="fa fa-play"></i> Download
+              <i className="fa fa-play"></i> <p className={classes.p}>Download</p>
             </button>
           </div>
 

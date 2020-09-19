@@ -5,7 +5,6 @@ import Navigation from "../Navigation/Navigation";
 const layout = (props) => (
   <Aux>
     <Navigation />
-
     <main>{props.children}</main>
   </Aux>
 );
