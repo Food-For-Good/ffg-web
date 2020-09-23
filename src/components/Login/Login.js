@@ -1,7 +1,6 @@
 import React from 'react'
 // import Aux from '../../hoc/Aux'
 import classes from './Login.module.css'
-import Logo from '../Logo/logo_symbol.png'
 
 const login = () =>{
   return(
@@ -9,7 +8,7 @@ const login = () =>{
   <div className={classes.formContent}>
 
     <div className={classes.fadeIn + ' '+ classes.first}>
-    <p> Login </p>
+    <p> <span className={classes.bold}>Welcome Back </span><span className={classes.exclaim}>!</span></p>
     </div>
     <form>
       <input type="text" id="login" className={classes.fadeIn+ ' '+  classes.second} name="login" placeholder="Emaill" />
@@ -19,8 +18,8 @@ const login = () =>{
 
 
     <div className={classes.formFooter}>
-      <p style={{display:'inline-block', margin:'auto'}}>New member? &nbsp;</p>
-      <a className={classes.underlineHover} href="/signup">Sign Up</a>
+      <p style={{display:'inline-block', margin:'auto'}}>New here? &nbsp;</p>
+      <a className={classes.underlineHover+ ' ' +classes.a} href="/signup">Join Us!</a>
     </div>
   </div>
 </div>

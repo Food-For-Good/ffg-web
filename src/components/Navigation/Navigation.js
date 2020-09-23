@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 import {Nav, Navbar } from "react-bootstrap";
 import classes from "./Navigation.module.css";
 import Logo from '../Logo/logo_symbol.png'
@@ -14,19 +15,19 @@ const navigation = (props) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link href="/" className={classes.nav_link}>
+          <Nav.Link as={NavLink} to="/" exact className={classes.nav_link+' '+classes.a}>
             Pictures
           </Nav.Link>
-          <Nav.Link href="/" className={classes.nav_link}>
+          <Nav.Link as={NavLink} to="/aboutus" exact className={classes.nav_link}>
             About Us
           </Nav.Link>
-          <Nav.Link href="/" className={classes.nav_link}>
+          <Nav.Link as={NavLink} to="/" exact className={classes.nav_link}>
             Contact Us
           </Nav.Link>
-          <Nav.Link href="login" className={classes.nav_link}>
+          <Nav.Link as={NavLink} to="login" exact className={classes.nav_link}>
             Login
           </Nav.Link>
-          <Nav.Link href="signup" className={classes.nav_link}>
+          <Nav.Link as={NavLink} to="signup" exact className={classes.nav_link}>
             Sign Up
           </Nav.Link>
           

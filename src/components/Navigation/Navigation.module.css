@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Forum&display=swap");
 
 .background {
-  background-color: #FEA848;
+  background-color: #353535;
 }
 .margin_set {
   padding: 0;
@@ -17,4 +17,5 @@
 .logo{
   width: 80px;
   height: 75px;
+  margin-left: 20px;
 }
