@@ -1,7 +1,6 @@
 import React from "react";
-import Aux from "../../hoc/Auxilary";
 import Navigation from "../Navigation/Navigation";
-import classes from "./Layout.module.css"
+import classes from "./Layout.module.css";
 
 const layout = (props) => (
   <div className={classes.bg}>
