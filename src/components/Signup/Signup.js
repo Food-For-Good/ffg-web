@@ -7,14 +7,13 @@ const signup = () =>{
   <div className={classes.formContent}>
 
     <div className={classes.fadeIn + ' '+ classes.first}>
-    <p> <span className={classes.bold}>Start Sharing </span><span className={classes.exclaim}>!</span></p>
+    <p> <span className={classes.bold}>Start Sharing</span><span className={classes.exclaim}>!</span></p>
     </div>
     <form>
-      <input type="text" className={classes.fadeIn+ ' '+  classes.second} name="login" placeholder="Name" />
-      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="Email" />
-      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="Mobile no." />
-      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="Password" />
-      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="Confirm Password" />
+      <input type="text" className={classes.fadeIn+ ' '+  classes.second} name="login" placeholder="NAME" />
+      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="EMAIL" />
+      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="PASSWORD" />
+      <input type="text" className={classes.fadeIn+ ' '+  classes.third} name="login" placeholder="CONFIRM PASSWORD" />
 
 
       <input type="submit" className={classes.fadeIn+ ' '+  classes.fourth} value="Sign Up" />
@@ -23,7 +22,7 @@ const signup = () =>{
 
     <div className={classes.formFooter}>
       <p style={{display:'inline-block', margin:'auto'}}>Already a member? &nbsp;</p>
-      <a className={classes.underlineHover+ ' '+classes.a} href="/login">Login</a>
+      <a className={classes.underlineHover+ ' '+classes.a} href="/login"><u>Login</u></a>
     </div>
   </div>
 </div>

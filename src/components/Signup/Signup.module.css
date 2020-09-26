@@ -1,52 +1,51 @@
-
 .a {
-  color: #FEA848;
-  display:inline-block;
+  color: #353535;
+  display: inline-block;
   text-decoration: none;
   font-weight: 400;
-}
-.bold{
   font-family: "Proxima Nova Bold";
-  font-size: 2rem  
 }
-.exclaim{
+.bold {
   font-family: "Proxima Nova Bold";
-  color:#FEA848;
-  font-size: 2rem 
+  font-size: 2.5rem;
+}
+.exclaim {
+  font-family: "Proxima Nova Bold";
+  color: #fea848;
+  font-size: 2.5rem;
 }
 h2 {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  display: inline-block;
+  margin: 40px 8px 10px 8px;
   color: #cccccc;
   font-family: "Proxima Nova";
 }
-.logo{
+.logo {
   width: 80px;
   height: 75px;
 }
 
-p{
-  color:black;
-  font-family: "Proxima Nova"
+p {
+  color: black;
+  font-family: "Proxima Nova";
 }
-
 
 /* STRUCTURE */
 
 .wrapper {
   background-image: url("../Login/bg_login_2.jpg");
+  background-color: #fff;
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
   padding: 200px;
-  
 }
 
 .formContent {
@@ -59,7 +58,7 @@ p{
   position: relative;
   padding: 0px;
   text-align: center;
-  font-family: "Proxima Nova"
+  font-family: "Proxima Nova";
 }
 
 .formFooter {
@@ -71,8 +70,6 @@ p{
   border-radius: 0 0 10px 10px;
 }
 
-
-
 /* TABS */
 
 h2.inactive {
@@ -81,15 +78,15 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #FEA848;
+  border-bottom: 2px solid #fea848;
 }
-
-
 
 /* FORM TYPOGRAPHY*/
 
-input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #FEA848;
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #fea848;
   border: none;
   border-radius: 100%;
   color: white;
@@ -100,8 +97,8 @@ input[type=button], input[type=submit], input[type=reset]  {
   text-transform: uppercase;
   font-family: "Proxima Nova Bold";
   font-size: 16px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(255,255,255);
-  box-shadow: 0 10px 30px 0 rgba(255,255,255);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(255, 255, 255);
+  box-shadow: 0 10px 30px 0 rgba(255, 255, 255);
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 50px 50px 50px;
   margin: 5px 20px 40px 20px;
@@ -112,11 +109,15 @@ input[type=button], input[type=submit], input[type=reset]  {
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #FEA848;
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #fea848;
 }
 
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
@@ -124,7 +125,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text] {
+input[type="text"] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -146,16 +147,14 @@ input[type=text] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #FEA848;
+  border-bottom: 2px solid #fea848;
 }
 
-input[type=text]:placeholder {
+input[type="text"]:placeholder {
   color: #cccccc;
 }
-
-
 
 /* ANIMATIONS */
 
@@ -196,23 +195,44 @@ input[type=text]:placeholder {
 }
 
 /* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fadeIn {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .fadeIn.first {
@@ -246,7 +266,7 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #FEA848;
+  background-color: #fea848;
   content: "";
   transition: width 0.2s;
 }
@@ -255,18 +275,16 @@ input[type=text]:placeholder {
   color: #0d0d0d;
 }
 
-.underlineHover:hover:after{
+.underlineHover:hover:after {
   width: 100%;
 }
-
-
 
 /* OTHERS */
 
 *:focus {
-    outline: none;
-} 
+  outline: none;
+}
 
 .icon {
-  width:60%;
+  width: 60%;
 }

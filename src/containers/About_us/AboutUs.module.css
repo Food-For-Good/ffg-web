@@ -1,5 +1,6 @@
 .body{
     font-family: "Proxima Nova";
+    
 }
 .h1{
     font-family: "Proxima Nova Bold";
@@ -19,4 +20,12 @@ text-align: center;
   display: block;
   margin: 10px auto 20px;
     display: block;
+}
+.contributor_dhruv{
+  width: 20%;
+  border-radius: 50%;
+display: block;
+margin: 10px auto 20px;
+  display: block;
+  height:42%
 }
