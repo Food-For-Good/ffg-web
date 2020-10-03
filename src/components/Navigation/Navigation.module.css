@@ -7,14 +7,29 @@
   padding: 0;
 }
 
-
 .nav_link {
   font-family: "Proxima Nova Bold";
   font-size: 1.05rem;
   margin: 5px 15px;
 }
-
-.logo{
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #353535;
+}
+.hover:hover {
+  background-color: #353535 !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.dropdown-item.active {
+  background-color: #353535 !important;
+  color: #fff7f1 !important;
+}
+.hover:active,
+.hover.active {
+  background-color: #353535 !important;
+  color: #fff7f1 !important;
+}
+.logo {
   width: 80px;
   height: 75px;
   margin-left: 20px;

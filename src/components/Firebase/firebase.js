@@ -1,6 +1,6 @@
 import app from "firebase/app";
 import "firebase/auth";
-
+import "firebase/firestore";
 const config = {
   apiKey: "AIzaSyBA74ti44yUujSLuzI9snLkSvaeB1l5hC4",
   authDomain: "learning-firebase-7a60d.firebaseapp.com",
@@ -13,6 +13,7 @@ class Firebase {
   constructor() {
     app.initializeApp(config);
     this.auth = app.auth();
+    this.db = app.firestore();
   }
   //   signup auth
   doCreateUserWithEmailAndPassword = (email, password) =>

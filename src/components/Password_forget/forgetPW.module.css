@@ -33,11 +33,7 @@ p {
   color: black;
   font-family: "Proxima Nova";
 }
-.eye_slash {
-  position: relative;
-  top: -1px;
-  left: -34px;
-}
+
 /* STRUCTURE */
 
 .wrapper {

@@ -10,6 +10,10 @@ import * as ROUTES from "./constants/routes";
 import AboutUs from "./containers/About_us/AboutUs";
 import Pictures from "./components/Pictures/index";
 import Password_forget from "./components/Password_forget/index";
+import { withAuthentication } from "./components/Session";
+import Logout from "./components/Logout";
+import Editprofile from "./components/Editprofile";
+import editprofile from "./components/Editprofile";
 
 class App extends Component {
   render() {
@@ -22,6 +26,8 @@ class App extends Component {
             <Route path={ROUTES.PICTURES} component={Pictures} />
             <Route path={ROUTES.LOG_IN} component={Login} />
             <Route path={ROUTES.PASSWORD_FORGET} component={Password_forget} />
+            <Route path={ROUTES.LOGOUT} component={Logout} />
+            <Route path={ROUTES.EDITPROFILE} component={Editprofile} />
             <Route path={ROUTES.HOME} component={Homepage} />
           </Switch>
         </Layout>
@@ -30,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withAuthentication(App);

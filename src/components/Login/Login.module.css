@@ -34,12 +34,17 @@ p {
   font-family: "Proxima Nova";
   margin-top: 20px;
 }
+.eye_slash {
+  position: relative;
+  top: -1px;
+  left: -34px;
+}
 
 /* STRUCTURE */
 
 .wrapper {
-  background-image: url("bg_temp.jpg");
-  background-color: #fff;
+  /* background-image: url("bg_temp.jpg"); */
+  background-color: #a7a7a7;
   display: flex;
   align-items: center;
   flex-direction: column;

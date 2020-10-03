@@ -1,31 +1,31 @@
-.body{
-    font-family: "Proxima Nova";
-    
+.body {
+  font-family: "Proxima Nova";
+  padding: 20px;
 }
-.h1{
-    font-family: "Proxima Nova Bold";
-    text-align: center;
-    margin: 50px auto 50px auto;
+.h1 {
+  font-family: "Proxima Nova Bold";
+  text-align: center;
+  margin: 50px auto 50px auto;
 }
-.us_bold{
-    font-family: "Proxima Nova Bold";
-    color: #FEA848
-  }
-.div_row{
-text-align: center;
+.us_bold {
+  font-family: "Proxima Nova Bold";
+  color: #fea848;
 }
-.contributor{
-    width: 20%;
-    border-radius: 50%;
-  display: block;
-  margin: 10px auto 20px;
-    display: block;
+.div_row {
+  text-align: center;
 }
-.contributor_dhruv{
+.contributor {
   width: 20%;
   border-radius: 50%;
-display: block;
-margin: 10px auto 20px;
   display: block;
-  height:42%
+  margin: 10px auto 20px;
+  display: block;
+}
+.contributor_dhruv {
+  width: 20%;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto 20px;
+  display: block;
+  height: 42%;
 }
