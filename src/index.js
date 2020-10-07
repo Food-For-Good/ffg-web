@@ -6,12 +6,15 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import { BrowserRouter } from "react-router-dom";
-import './fonts/ProximaNova-Regular.otf'
+import "./fonts/ProximaNova-Regular.otf";
+import Firebase, { FirebaseContext } from "./components/Firebase";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <FirebaseContext.Provider value={new Firebase()}>
+    <BrowserRouter>
       <App />
-    </BrowserRouter>,
+    </BrowserRouter>
+  </FirebaseContext.Provider>,
   document.getElementById("root")
 );
 

@@ -1,12 +1,12 @@
 import React from "react";
-import Aux from "../../hoc/Auxilary";
 import Navigation from "../Navigation/Navigation";
+import classes from "./Layout.module.css";
 
 const layout = (props) => (
-  <Aux>
+  <div className={classes.bg}>
     <Navigation />
     <main>{props.children}</main>
-  </Aux>
+  </div>
 );
 
 export default layout;

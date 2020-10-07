@@ -1,9 +1,9 @@
 body {
   margin: 0;
 
-  font-family: "Proxima Nova",-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,17 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova'), url(./fonts/ProximaNova-Regular.otf) format('truetype');
-  
+.dropdown-item.active {
+  background-color: #353535 !important;
+  color: #fff7f1 !important;
 }
-@font-face{
-font-family: 'Proxima Nova Thin';
-  src: local('Proxima Nova'), url(./fonts/Proxima\ Nova\ Thin.otf) format('truetype');
+.dropdown-menu.show {
+  display: block !important;
+  margin: 0px !important;
+  left: -18px !important;
+  top: 42px !important;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova"),
+    url(./fonts/ProximaNova-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: local("Proxima Nova"),
+    url(./fonts/Proxima\ Nova\ Thin.otf) format("truetype");
 }
 
-@font-face{
-  font-family: 'Proxima Nova Bold';
-  src: local('Proxima Nova'), url(./fonts/Proxima\ Nova\ Bold.otf) format('truetype');
-  }
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: local("Proxima Nova"),
+    url(./fonts/Proxima\ Nova\ Bold.otf) format("truetype");
+}
