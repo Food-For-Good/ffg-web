@@ -4,6 +4,7 @@ import { withFirebase } from "../Firebase";
 import { withRouter } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 import { Alert } from "react-bootstrap";
+import add_location from "./add_location.svg";
 
 const INITIAL_STATE = {
   username: "",
@@ -66,6 +67,7 @@ class Signup extends Component {
   handle_error = () => {
     this.setState({ error: null });
   };
+
   render() {
     const { username, email, passwordOne, passwordTwo, error } = this.state;
     const pass_icon_1 = !this.state.show_one ? "-slash" : "";
@@ -124,7 +126,12 @@ class Signup extends Component {
               className={"fa fa-eye" + pass_icon_2 + " " + classes.eye_slash}
               onClick={this.handleshow_two}
             ></i>
-
+            <div style={{ padding: "5px", margin: "5px" }}>
+              <a href="/">
+                <img src={add_location} className={classes.svg_img} />{" "}
+                <p style={{ display: "inline-block" }}>Add Location</p>
+              </a>
+            </div>
             <input
               type="submit"
               className={classes.fadeIn + " " + classes.fourth}
