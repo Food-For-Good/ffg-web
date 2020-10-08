@@ -37,3 +37,46 @@ code {
   src: local("Proxima Nova"),
     url(./fonts/Proxima\ Nova\ Bold.otf) format("truetype");
 }
+
+.marker {
+  width: 0;
+  height: 0;
+}
+
+.marker span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: #4d2d73;
+  border: solid 2px;
+  border-radius: 0 70% 70%;
+  box-shadow: 0 0 2px #000;
+  cursor: pointer;
+  transform-origin: 0 0;
+  transform: rotateZ(-135deg);
+}
+.mapboxgl-ctrl-group {
+  display: inline-block;
+}
+.marker b {
+  transform: rotateZ(135deg);
+}
+
+.temporary-marker span {
+  background: #fea848;
+}
+.mapboxgl-ctrl-group button {
+  width: 29px;
+  height: 65px;
+  display: block;
+  padding: 0;
+  outline: none;
+  border: 0;
+  box-sizing: border-box;
+  background-color: #fff7f1;
+  cursor: pointer;
+}

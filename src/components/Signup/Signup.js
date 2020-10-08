@@ -5,6 +5,10 @@ import { withRouter } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 import { Alert } from "react-bootstrap";
 import add_location from "./add_location.svg";
+import Map from "../Map/Map";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+import Address from "../Map/Address";
 
 const INITIAL_STATE = {
   username: "",
@@ -14,6 +18,16 @@ const INITIAL_STATE = {
   error: null,
   show_one: false,
   show_two: false,
+  viewport: {
+    latitude: 0,
+    longitude: 0,
+    zoom: 14,
+    width: "400px",
+    height: "400px",
+  },
+  show_button: true,
+  show_address: false,
+  val: "",
 };
 class Signup extends Component {
   constructor(props) {
@@ -22,10 +36,10 @@ class Signup extends Component {
   }
 
   onSubmit = (event) => {
-    const { username, email, passwordOne, passwordTwo } = this.state;
+    const { username, email, passwordOne, passwordTwo, val } = this.state;
     const isInvalid_password = passwordOne !== passwordTwo;
     const isInvalid_empty =
-      passwordOne === "" || email === "" || username === "";
+      passwordOne === "" || email === "" || username === "" || val === "";
     if (isInvalid_password) {
       this.setState({
         error: { message: "Passwords do not match!" },
@@ -67,12 +81,62 @@ class Signup extends Component {
   handle_error = () => {
     this.setState({ error: null });
   };
+  handle_input = (e) => {
+    this.setState({ val: e.target.value });
+
+    e.preventDefault();
+  };
+  handle = (e) => {
+    this.setState({
+      viewport: e,
+      show_button: true,
+      show_address: true,
+    });
+  };
+  handle_address = (e) => {
+    this.setState({ val: e });
+  };
+  handle_button = (e) => {
+    this.setState({ show_button: false, show_address: false });
+    e.preventDefault();
+  };
+  onOpenModal = () => {
+    this.setState({ show_button: false });
+  };
+
+  onCloseModal = () => {
+    this.setState({ show_button: true });
+  };
 
   render() {
+    let ele = this.state.show_button ? (
+      <div style={{ padding: "5px", margin: "5px" }}>
+        <a href="#" onClick={this.handle_button}>
+          <img src={add_location} className={classes.svg_img} />{" "}
+          <p style={{ display: "inline-block" }}>Add Location</p>
+        </a>
+      </div>
+    ) : (
+      <Modal open={!this.state.show_button} onClose={this.onCloseModal}>
+        <Map onchange={this.handle} viewport={this.state.viewport} />
+      </Modal>
+    );
     const { username, email, passwordOne, passwordTwo, error } = this.state;
     const pass_icon_1 = !this.state.show_one ? "-slash" : "";
     const pass_icon_2 = !this.state.show_two ? "-slash" : "";
-
+    ele = this.state.show_address ? (
+      <div>
+        <Address
+          longitude={this.state.viewport.longitude}
+          latitude={this.state.viewport.latitude}
+          onchange_add={this.handle_address}
+        />
+        <textarea value={this.state.val} onChange={this.handle_input} />
+        {ele}
+      </div>
+    ) : (
+      ele
+    );
     return (
       <div className={classes.wrapper + " " + classes.fadeInDown}>
         <div className={classes.formContent}>
@@ -126,12 +190,7 @@ class Signup extends Component {
               className={"fa fa-eye" + pass_icon_2 + " " + classes.eye_slash}
               onClick={this.handleshow_two}
             ></i>
-            <div style={{ padding: "5px", margin: "5px" }}>
-              <a href="/">
-                <img src={add_location} className={classes.svg_img} />{" "}
-                <p style={{ display: "inline-block" }}>Add Location</p>
-              </a>
-            </div>
+            {ele}
             <input
               type="submit"
               className={classes.fadeIn + " " + classes.fourth}

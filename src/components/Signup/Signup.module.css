@@ -98,6 +98,7 @@ h2.active {
 
 /* FORM TYPOGRAPHY*/
 
+textarea,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
@@ -140,6 +141,7 @@ input[type="reset"]:active {
   transform: scale(0.95);
 }
 
+textarea,
 input[type="text"],
 input[type="password"] {
   background-color: #f6f6f6;
@@ -163,12 +165,14 @@ input[type="password"] {
   border-radius: 5px 5px 5px 5px;
 }
 
+textarea,
 input[type="text"]:focus,
 input[type="password"]:focus {
   background-color: #fff;
   border-bottom: 2px solid #fea848;
 }
 
+textarea,
 input[type="text"]:placeholder,
 input[type="password"]::placeholder {
   color: #cccccc;
