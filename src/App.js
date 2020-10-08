@@ -13,7 +13,6 @@ import Password_forget from "./components/Password_forget/index";
 import { withAuthentication } from "./components/Session";
 import Logout from "./components/Logout";
 import Editprofile from "./components/Editprofile";
-import editprofile from "./components/Editprofile";
 
 class App extends Component {
   render() {
