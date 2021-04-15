@@ -1,11 +1,13 @@
 .featureTitle {
+  font-family: "Proxima Nova Bold";
   font-size: 1.35rem;
-  color: #FEA848;
+  color: #fea848;
 }
 
-.description{
-  color:#FEA848;
+.description {
+  color: #fea848;
 }
+
 p {
   font-family: "Proxima Nova";
   font-size: 1.15rem;
@@ -17,7 +19,7 @@ p {
 }
 
 .icon {
-  color: #FEA848;
+  color: #fea848;
   margin-bottom: 16px;
 }
 

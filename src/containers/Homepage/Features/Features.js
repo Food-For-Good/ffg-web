@@ -13,19 +13,19 @@ class Features extends Component {
       <div className={classes_applied.join(" ")}>
         <div className="row">
           <Feature
-            icon_name={"fa-check-circle"}
-            title={"Sed finibus"}
-            description={"Fusce scelerisque eros a dignissim pellentesque"}
+            icon_name={"fa-list-ol"}
+            title={"Request tracking "}
+            description={"Live listings with real-time updates."}
           />
           <Feature
-            icon_name={"fa-bullseye"}
-            title={"Sed finibus"}
-            description={"Fusce scelerisque eros a dignissim pellentesque"}
+            icon_name={"fa-comments"}
+            title={"Chat seamlessly"}
+            description={"Inbuilt communication channel."}
           />
           <Feature
-            icon_name={"fa-heart"}
-            title={"Sed finibus"}
-            description={"Fusce scelerisque eros a dignissim pellentesque"}
+            icon_name={"fa-rss-square"}
+            title={"Share your experience"}
+            description={"Be a part of an amazing community with our community blogs."}
           />
         </div>
       </div>

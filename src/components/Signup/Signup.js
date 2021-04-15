@@ -53,6 +53,7 @@ class Signup extends Component {
           this.props.firebase.db.collection("users").doc(email).set({
             email: email,
             username: username,
+            address:val
           });
           this.setState({ ...INITIAL_STATE });
           this.props.history.push(ROUTES.HOME);
